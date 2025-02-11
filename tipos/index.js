@@ -16,3 +16,4 @@ setTimeout(() => {
     const sallary = 1000;
     console.log(sallary);
 }, 2000);
+//Objects
