@@ -11,3 +11,8 @@ console.log(nome.toUpperCase());
 
 const test:boolean = true;
 console.log(test);
+
+
+//Inference and annotation
+const ann: string = "Teste"
+const inf = "Teste"

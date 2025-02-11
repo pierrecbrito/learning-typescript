@@ -8,3 +8,6 @@ var nome = "João";
 console.log(nome.toUpperCase());
 var test = true;
 console.log(test);
+//Inference and annotation
+var ann = "Teste";
+var inf = "Teste";
