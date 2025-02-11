@@ -13,3 +13,5 @@ console.log(test);
 const ann = "Teste";
 const inf = "Teste";
 console.log("testando... tsc -w (hot reload)");
+let numero = 10;
+let textoNumero = `${numero}`;
