@@ -23,3 +23,8 @@ setTimeout(() => {
 }, 2000);
 
 //Objects
+function passCoordinates(coord: { lat: number, long: number }) {
+    console.log(`x coordinates is ${coord.lat} and y coordinates is ${coord.long}`);
+}
+
+passCoordinates({ lat: 10, long: 20 });

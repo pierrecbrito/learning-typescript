@@ -17,3 +17,7 @@ setTimeout(() => {
     console.log(sallary);
 }, 2000);
 //Objects
+function passCoordinates(coord) {
+    console.log(`x coordinates is ${coord.lat} and y coordinates is ${coord.long}`);
+}
+passCoordinates({ lat: 10, long: 20 });
