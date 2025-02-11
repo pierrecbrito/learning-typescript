@@ -1,13 +1,15 @@
+"use strict";
 // 1 - numbers
-var x = 10;
+let x = 10;
 console.log(x);
 //Participação no desenvolvimento, não no código final.
-var y = 10.587;
+let y = 10.587;
 console.log(y.toPrecision(3));
-var nome = "João";
+const nome = "João";
 console.log(nome.toUpperCase());
-var test = true;
+const test = true;
 console.log(test);
 //Inference and annotation
-var ann = "Teste";
-var inf = "Teste";
+const ann = "Teste";
+const inf = "Teste";
+console.log("testando... tsc -w (hot reload)");

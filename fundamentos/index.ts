@@ -16,3 +16,4 @@ console.log(test);
 //Inference and annotation
 const ann: string = "Teste"
 const inf = "Teste"
+console.log("testando... tsc -w (hot reload)")
