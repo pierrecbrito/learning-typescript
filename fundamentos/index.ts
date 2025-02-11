@@ -8,3 +8,6 @@ console.log(y.toPrecision(3));
 
 const nome:string = "João";
 console.log(nome.toUpperCase());
+
+const test:boolean = true;
+console.log(test);

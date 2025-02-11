@@ -6,3 +6,5 @@ var y = 10.587;
 console.log(y.toPrecision(3));
 var nome = "João";
 console.log(nome.toUpperCase());
+var test = true;
+console.log(test);
