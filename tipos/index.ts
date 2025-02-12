@@ -28,3 +28,13 @@ function passCoordinates(coord: { lat: number, long: number }) {
 }
 
 passCoordinates({ lat: 10, long: 20 });
+
+//Optional properties
+function showNumber(a: number, b?: number ) {
+    console.log('a', a);
+    if(b)
+        console.log('b', b);
+}
+
+showNumber(10);
+
