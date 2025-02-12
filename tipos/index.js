@@ -34,3 +34,22 @@ function showValue(a) {
 }
 showValue(10);
 showValue('Hello');
+//Union Types (with conditionals)
+function showValue2(a) {
+    if (typeof a === 'number')
+        console.log('Number', a);
+    else
+        console.log('String', a);
+}
+showValue2(10);
+function showValue3(a) {
+    if (typeof a === 'number')
+        console.log('Number', a);
+    else
+        console.log('String', a);
+}
+showValue3(10);
+function passCoordinates2(coord) {
+    console.log(`x coordinates is ${coord.lat} and y coordinates is ${coord.long}`);
+}
+passCoordinates2({ lat: 10, long: 20 });
