@@ -67,3 +67,6 @@ test2 = "Hello";
 //Big int
 const big = 1000n;
 console.log(big);
+//Symbol
+let symbolA = Symbol('A');
+console.log(symbolA);

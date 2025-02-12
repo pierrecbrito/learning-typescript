@@ -99,3 +99,8 @@ test2 = "Hello";
 //Big int
 const big: bigint = 1000n;
 console.log(big);
+
+//Symbol
+let symbolA:symbol = Symbol('A');
+
+console.log(symbolA);
