@@ -79,3 +79,23 @@ function passCoordinates2(coord: Coordinates) {
 }
 
 passCoordinates2({ lat: 10, long: 20 });
+
+//Literal Types
+let test: "testando"
+test = "testando"
+
+console.log(test)
+
+function showValue4(a: 'Hello' | 'World') {
+    console.log(a);
+}
+
+showValue4('Hello');
+
+//Non null
+let test2: string | null = null;
+test2 = "Hello";
+
+//Big int
+const big: bigint = 1000n;
+console.log(big);

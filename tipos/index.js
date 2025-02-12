@@ -53,3 +53,17 @@ function passCoordinates2(coord) {
     console.log(`x coordinates is ${coord.lat} and y coordinates is ${coord.long}`);
 }
 passCoordinates2({ lat: 10, long: 20 });
+//Literal Types
+let test;
+test = "testando";
+console.log(test);
+function showValue4(a) {
+    console.log(a);
+}
+showValue4('Hello');
+//Non null
+let test2 = null;
+test2 = "Hello";
+//Big int
+const big = 1000n;
+console.log(big);
