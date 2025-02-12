@@ -42,3 +42,8 @@ class Person {
 
 let person1: Person = new Person('John', 30);
 console.log(person1 instanceof Person, person1);
+
+//"IN"
+
+let obj = { name: 'John', age: 30 };
+console.log('name' in obj, 'age' in obj, 'birthday' in obj);
