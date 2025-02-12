@@ -26,3 +26,12 @@ function operations(arr, operation) {
 }
 operations([10, 20, 30], 'sum');
 operations([10, 20, 30], 'sub');
+//Instance of
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+}
+let person1 = new Person('John', 30);
+console.log(person1 instanceof Person, person1);
