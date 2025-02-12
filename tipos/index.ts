@@ -29,7 +29,7 @@ function passCoordinates(coord: { lat: number, long: number }) {
 
 passCoordinates({ lat: 10, long: 20 });
 
-//Optional properties
+//Optional properties (only the last ones)
 function showNumber(a: number, b?: number ) {
     console.log('a', a);
     if(b)
@@ -38,3 +38,10 @@ function showNumber(a: number, b?: number ) {
 
 showNumber(10);
 
+//Union Types
+function showValue(a: number | string) {
+    console.log(a);
+}
+
+showValue(10);
+showValue('Hello');

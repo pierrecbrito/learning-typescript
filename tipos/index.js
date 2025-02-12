@@ -21,10 +21,16 @@ function passCoordinates(coord) {
     console.log(`x coordinates is ${coord.lat} and y coordinates is ${coord.long}`);
 }
 passCoordinates({ lat: 10, long: 20 });
-//Optional properties
+//Optional properties (only the last ones)
 function showNumber(a, b) {
     console.log('a', a);
     if (b)
         console.log('b', b);
 }
 showNumber(10);
+//Union Types
+function showValue(a) {
+    console.log(a);
+}
+showValue(10);
+showValue('Hello');
