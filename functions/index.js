@@ -18,3 +18,10 @@ function genericFunction(value) {
 }
 console.log(genericFunction('Hello'));
 console.log(genericFunction(100));
+//Constraints
+function biggestNumber(value1, value2) {
+    let biggest;
+    return value1 > value2 ? value1 : value2;
+}
+console.log(biggestNumber(100, 200));
+console.log(biggestNumber('100', '200'));

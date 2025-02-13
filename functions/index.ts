@@ -23,3 +23,15 @@ function genericFunction<T>(value: T): T {
 
 console.log(genericFunction<string>('Hello'));
 console.log(genericFunction<number>(100));
+
+
+//Constraints
+
+function biggestNumber<T extends number | string>(value1: T, value2: T): T {
+    let biggest: T;
+
+    return value1 > value2 ? value1 : value2;
+}
+
+console.log(biggestNumber(100, 200));
+console.log(biggestNumber('100', '200'));
