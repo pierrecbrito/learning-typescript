@@ -21,3 +21,7 @@ const shirt5 = { name: 'Shirt', price: 50, isAvaliable: true };
 console.log(shirt5);
 const shirt6 = { name: 'Shirt', price: 70, isAvaliable: true };
 console.log(shirt6);
+//ReadOnlyArray
+const products = ['Shirt', 'Pants', 'Hat'];
+//products.push('Shoes');
+console.log(products);

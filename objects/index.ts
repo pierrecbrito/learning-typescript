@@ -78,3 +78,8 @@ type Shirt = Product7 & Product8;
 
 const shirt6: Shirt = {name: 'Shirt', price: 70, isAvaliable: true};
 console.log(shirt6);
+
+//ReadOnlyArray
+const products: ReadonlyArray<string> = ['Shirt', 'Pants', 'Hat'];
+//products.push('Shoes');
+console.log(products);
