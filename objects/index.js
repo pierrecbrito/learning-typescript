@@ -29,3 +29,8 @@ console.log(products);
 let product;
 product = ['Shirt', 20, true];
 console.log(product);
+//9 - tuplas com readonly
+let product2;
+product2 = ['Shirt', 20, true];
+//product2[1] = 30;
+console.log(product2);

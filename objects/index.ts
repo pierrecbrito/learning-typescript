@@ -88,3 +88,9 @@ console.log(products);
 let product: [string, number, boolean];
 product = ['Shirt', 20, true];
 console.log(product);
+
+//9 - tuplas com readonly
+let product2: readonly [string, number, boolean];
+product2 = ['Shirt', 20, true];
+//product2[1] = 30;
+console.log(product2);
