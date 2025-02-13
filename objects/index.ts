@@ -39,3 +39,13 @@ interface Product3 {
 
 const shirt3: Product3 = {name: 'Shirt', price: 20, isAvaliable: true};
 //shirt3.name = 'Pants';
+
+//Index Signature
+interface Product4 {
+    name: string;
+    price: number;
+    [key: string]: any;
+}
+
+const shirt4: Product4 = {name: 'Shirt', price: 20, isAvaliable: true};
+console.log(shirt4);
