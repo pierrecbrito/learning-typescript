@@ -4,7 +4,7 @@ function withoutReturn() {
     console.log('I am a void function');
 }
 withoutReturn();
-//2- number
+//2- function as parameter
 function greeting(name) {
     return `Hello ${name}`;
 }
