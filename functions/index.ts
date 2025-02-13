@@ -70,3 +70,10 @@ function firstValue(value: unknown) {
 
 unknownType('Hello');
 console.log(firstValue([1, 2, 3]));
+
+//Never type
+function error(message: string): never {
+    throw new Error(message);
+}
+
+//error('Error message');

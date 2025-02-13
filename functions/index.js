@@ -52,3 +52,8 @@ function firstValue(value) {
 }
 unknownType('Hello');
 console.log(firstValue([1, 2, 3]));
+//Never type
+function error(message) {
+    throw new Error(message);
+}
+error('Error message');
