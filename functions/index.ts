@@ -15,3 +15,11 @@ function preGreeting(f: (name:string) => string, username: string) {
 }
 
 console.log(preGreeting(greeting, 'John'));
+
+//Generic function
+function genericFunction<T>(value: T): T {
+    return value;
+}
+
+console.log(genericFunction<string>('Hello'));
+console.log(genericFunction<number>(100));

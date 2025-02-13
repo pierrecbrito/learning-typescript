@@ -12,3 +12,9 @@ function preGreeting(f, username) {
     console.log("Preparing function...", f(username));
 }
 console.log(preGreeting(greeting, 'John'));
+//Generic function
+function genericFunction(value) {
+    return value;
+}
+console.log(genericFunction('Hello'));
+console.log(genericFunction(100));
