@@ -77,3 +77,17 @@ function error(message: string): never {
 }
 
 //error('Error message');
+
+//Rest parameters
+function summAll(...values: number[]): number {
+    return values.reduce((a, b) => a + b);
+}
+
+console.log(summAll(1, 2, 3, 4, 5));
+
+//Destructoring parameters
+function destructuringParams({ name, age }: { name: string, age: number }) {
+    console.log(name, age);
+}
+
+destructuringParams({ name: 'John', age: 30 });

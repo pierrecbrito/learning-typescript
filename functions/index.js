@@ -57,3 +57,13 @@ function error(message) {
     throw new Error(message);
 }
 //error('Error message');
+//Rest parameters
+function summAll(...values) {
+    return values.reduce((a, b) => a + b);
+}
+console.log(summAll(1, 2, 3, 4, 5));
+//Destructoring parameters
+function destructuringParams({ name, age }) {
+    console.log(name, age);
+}
+destructuringParams({ name: 'John', age: 30 });
