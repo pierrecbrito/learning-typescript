@@ -26,7 +26,6 @@ console.log(genericFunction<number>(100));
 
 
 //Constraints
-
 function biggestNumber<T extends number | string>(value1: T, value2: T): T {
     let biggest: T;
 
@@ -35,3 +34,18 @@ function biggestNumber<T extends number | string>(value1: T, value2: T): T {
 
 console.log(biggestNumber(100, 200));
 console.log(biggestNumber('100', '200'));
+
+//Typing parameters
+function sum(a: number, b: number): number {
+    return a + b;
+}
+
+console.log(sum(10, 20));
+
+//Optional parameters
+function optionalParams(a: number, b: number, c?: number): number {
+    return c ? a + b + c : a + b;
+}
+
+console.log(optionalParams(10, 20));
+console.log(optionalParams(10, 20, 30));

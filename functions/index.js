@@ -25,3 +25,14 @@ function biggestNumber(value1, value2) {
 }
 console.log(biggestNumber(100, 200));
 console.log(biggestNumber('100', '200'));
+//Typing parameters
+function sum(a, b) {
+    return a + b;
+}
+console.log(sum(10, 20));
+//Optional parameters
+function optionalParams(a, b, c) {
+    return c ? a + b + c : a + b;
+}
+console.log(optionalParams(10, 20));
+console.log(optionalParams(10, 20, 30));
