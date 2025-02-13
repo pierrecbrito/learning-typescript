@@ -41,3 +41,8 @@ function defaultParams(a, b, c = 30) {
     return a + b + c;
 }
 console.log(defaultParams(10, 20));
+//Unknown type
+function unknownType(value) {
+    console.log(value);
+}
+unknownType('Hello');

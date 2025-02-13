@@ -56,3 +56,10 @@ function defaultParams(a: number, b: number, c: number = 30): number {
 }
 
 console.log(defaultParams(10, 20));
+
+//Unknown type
+function unknownType(value: unknown) {
+    console.log(value);
+}
+
+unknownType('Hello');
