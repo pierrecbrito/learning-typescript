@@ -29,3 +29,13 @@ function showProductDetails2(product: Product2) {
 
 const shirt2: Product2 = {name: 'Shirt', price: 20};
 showProductDetails2(shirt2);
+
+//Readonly properties
+interface Product3 {
+    readonly name: string;
+    price: number;
+    isAvaliable: boolean;
+}
+
+const shirt3: Product3 = {name: 'Shirt', price: 20, isAvaliable: true};
+//shirt3.name = 'Pants';

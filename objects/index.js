@@ -14,3 +14,5 @@ function showProductDetails2(product) {
 }
 const shirt2 = { name: 'Shirt', price: 20 };
 showProductDetails2(shirt2);
+const shirt3 = { name: 'Shirt', price: 20, isAvaliable: true };
+//shirt3.name = 'Pants';
