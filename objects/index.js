@@ -25,3 +25,7 @@ console.log(shirt6);
 const products = ['Shirt', 'Pants', 'Hat'];
 //products.push('Shoes');
 console.log(products);
+//Tuple
+let product;
+product = ['Shirt', 20, true];
+console.log(product);

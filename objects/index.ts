@@ -83,3 +83,8 @@ console.log(shirt6);
 const products: ReadonlyArray<string> = ['Shirt', 'Pants', 'Hat'];
 //products.push('Shoes');
 console.log(products);
+
+//Tuple
+let product: [string, number, boolean];
+product = ['Shirt', 20, true];
+console.log(product);
