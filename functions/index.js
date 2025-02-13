@@ -36,3 +36,8 @@ function optionalParams(a, b, c) {
 }
 console.log(optionalParams(10, 20));
 console.log(optionalParams(10, 20, 30));
+//Default parameters
+function defaultParams(a, b, c = 30) {
+    return a + b + c;
+}
+console.log(defaultParams(10, 20));

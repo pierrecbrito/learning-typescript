@@ -49,3 +49,10 @@ function optionalParams(a: number, b: number, c?: number): number {
 
 console.log(optionalParams(10, 20));
 console.log(optionalParams(10, 20, 30));
+
+//Default parameters
+function defaultParams(a: number, b: number, c: number = 30): number {
+    return a + b + c;
+}
+
+console.log(defaultParams(10, 20));
