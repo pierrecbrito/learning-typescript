@@ -2,3 +2,5 @@
 function withoutReturn(): void {
     console.log('I am a void function');
 }
+
+withoutReturn();

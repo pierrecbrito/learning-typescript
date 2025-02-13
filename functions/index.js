@@ -3,3 +3,4 @@
 function withoutReturn() {
     console.log('I am a void function');
 }
+withoutReturn();
