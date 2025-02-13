@@ -14,7 +14,7 @@ function preGreeting(f: (name:string) => string, username: string) {
     console.log("Preparing function...", f(username));
 }
 
-console.log(preGreeting(greeting, 'John'));
+preGreeting(greeting, 'John');
 
 //Generic function
 function genericFunction<T>(value: T): T {
