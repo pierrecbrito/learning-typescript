@@ -45,4 +45,10 @@ console.log(defaultParams(10, 20));
 function unknownType(value) {
     console.log(value);
 }
+function firstValue(value) {
+    if (Array.isArray(value)) {
+        console.log(value[0]);
+    }
+}
 unknownType('Hello');
+console.log(firstValue([1, 2, 3]));

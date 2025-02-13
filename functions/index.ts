@@ -62,4 +62,11 @@ function unknownType(value: unknown) {
     console.log(value);
 }
 
+function firstValue(value: unknown) {
+    if (Array.isArray(value)) {
+        console.log(value[0]);
+    }
+}
+
 unknownType('Hello');
+console.log(firstValue([1, 2, 3]));
