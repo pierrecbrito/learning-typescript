@@ -56,4 +56,4 @@ console.log(firstValue([1, 2, 3]));
 function error(message) {
     throw new Error(message);
 }
-error('Error message');
+//error('Error message');
