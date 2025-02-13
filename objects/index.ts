@@ -49,3 +49,32 @@ interface Product4 {
 
 const shirt4: Product4 = {name: 'Shirt', price: 20, isAvaliable: true};
 console.log(shirt4);
+
+
+//Extending interfaces
+interface Product5 {
+    name: string;
+    price: number;
+}
+
+interface Product6 extends Product5 {
+    isAvaliable: boolean;
+}
+
+const shirt5: Product6 = {name: 'Shirt', price: 50, isAvaliable: true};
+console.log(shirt5);
+
+//Intersections types
+interface Product7 {
+    name: string;
+    price: number;
+}
+
+interface Product8 {
+    isAvaliable: boolean;
+}
+
+type Shirt = Product7 & Product8;
+
+const shirt6: Shirt = {name: 'Shirt', price: 70, isAvaliable: true};
+console.log(shirt6);

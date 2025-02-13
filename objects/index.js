@@ -17,3 +17,7 @@ showProductDetails2(shirt2);
 const shirt3 = { name: 'Shirt', price: 20, isAvaliable: true };
 const shirt4 = { name: 'Shirt', price: 20, isAvaliable: true };
 console.log(shirt4);
+const shirt5 = { name: 'Shirt', price: 50, isAvaliable: true };
+console.log(shirt5);
+const shirt6 = { name: 'Shirt', price: 70, isAvaliable: true };
+console.log(shirt6);
