@@ -30,3 +30,11 @@ const myPen: Pen = {name: 'Pen', wheel: 'none', engine: true};
 
 console.log(myCar);
 console.log(myPen);
+
+//Type parameters
+function getSomeData<T, K extends keyof T>(obj: T, key: K) {
+    return `A chave é: ${key.toString()} e o valor é: ${obj[key]}`;
+}
+
+
+console.log(getSomeData({name: 'John', age: 30}, "name"));

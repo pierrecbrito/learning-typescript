@@ -15,3 +15,8 @@ const myCar = { name: 'Car', wheel: 4, engine: 'V8' };
 const myPen = { name: 'Pen', wheel: 'none', engine: true };
 console.log(myCar);
 console.log(myPen);
+//Type parameters
+function getSomeData(obj, key) {
+    return `A chave é: ${key.toString()} e o valor é: ${obj[key]}`;
+}
+console.log(getSomeData({ name: 'John', age: 30 }, "name"));
