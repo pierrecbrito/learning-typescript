@@ -34,3 +34,5 @@ function showKm(km) {
     console.log(km);
 }
 showKm(truck.km);
+const someVar = 'Hello';
+console.log(someVar);

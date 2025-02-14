@@ -68,3 +68,12 @@ function showKm(km: TruckKm) {
 }
 
 showKm(truck.km);
+
+
+//Conditional types
+interface A {}
+interface B extends A {}
+
+type myType = B extends A ? string : number;
+const someVar: myType = 'Hello';
+console.log(someVar);
