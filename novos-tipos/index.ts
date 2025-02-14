@@ -14,3 +14,19 @@ function showProductName<T extends {name: string}>(obj: T): string {
 
 const myObj = {name: 'John', age: 30};
 console.log(showProductName(myObj));
+
+//Generics com interfaces
+interface MyObject<T, U> {
+    name: string,
+    wheel: T,
+    engine: U
+}
+
+type Car = MyObject<number, string>;
+type Pen = MyObject<string, boolean>;
+
+const myCar: Car = {name: 'Car', wheel: 4, engine: 'V8'};
+const myPen: Pen = {name: 'Pen', wheel: 'none', engine: true};
+
+console.log(myCar);
+console.log(myPen);

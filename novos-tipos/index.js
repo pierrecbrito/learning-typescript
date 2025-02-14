@@ -11,3 +11,7 @@ function showProductName(obj) {
 }
 const myObj = { name: 'John', age: 30 };
 console.log(showProductName(myObj));
+const myCar = { name: 'Car', wheel: 4, engine: 'V8' };
+const myPen = { name: 'Pen', wheel: 'none', engine: true };
+console.log(myCar);
+console.log(myPen);
