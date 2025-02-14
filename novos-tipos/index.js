@@ -36,3 +36,4 @@ function showKm(km) {
 showKm(truck.km);
 const someVar = 'Hello';
 console.log(someVar);
+const testing = 'text with template literal type';

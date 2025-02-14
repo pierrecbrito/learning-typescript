@@ -77,3 +77,8 @@ interface B extends A {}
 type myType = B extends A ? string : number;
 const someVar: myType = 'Hello';
 console.log(someVar);
+
+//Template literal type
+type TestA = "text";
+type TestB = `${TestA} with template literal type`;
+const testing: TestB = 'text with template literal type';
