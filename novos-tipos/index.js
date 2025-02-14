@@ -20,3 +20,8 @@ function getSomeData(obj, key) {
     return `A chave é: ${key.toString()} e o valor é: ${obj[key]}`;
 }
 console.log(getSomeData({ name: 'John', age: 30 }, "name"));
+function showCharName(obj, key) {
+    return obj[key];
+}
+const char = { name: 'John', age: 30, hasDriveLicense: true };
+console.log(showCharName(char, 'name'));

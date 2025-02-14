@@ -38,3 +38,14 @@ function getSomeData<T, K extends keyof T>(obj: T, key: K) {
 
 
 console.log(getSomeData({name: 'John', age: 30}, "name"));
+
+//keyof type operator
+type Character = {name:string, age: number, hasDriveLicense: boolean};
+type C = keyof Character
+
+function showCharName(obj: Character, key: C) {
+    return obj[key];
+}
+
+const char: Character = {name: 'John', age: 30, hasDriveLicense: true};
+console.log(showCharName(char, 'name'));
