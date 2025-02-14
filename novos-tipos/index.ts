@@ -54,3 +54,17 @@ console.log(showCharName(char, 'name'));
 const userName: string = 'John';
 const userName2: typeof userName = 'Doe';
 console.log(userName2);
+
+//Indexed Access Types
+type Truck = {km: number, kg: number, description: string};
+type TruckKm = Truck['km'];
+type TruckKg = Truck['kg'];
+type TruckDescription = Truck['description'];
+
+const truck: Truck = {km: 1000, kg: 2000, description: 'Truck'};
+
+function showKm(km: TruckKm) {
+    console.log(km);
+}
+
+showKm(truck.km);

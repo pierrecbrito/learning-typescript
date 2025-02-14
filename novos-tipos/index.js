@@ -29,3 +29,8 @@ console.log(showCharName(char, 'name'));
 const userName = 'John';
 const userName2 = 'Doe';
 console.log(userName2);
+const truck = { km: 1000, kg: 2000, description: 'Truck' };
+function showKm(km) {
+    console.log(km);
+}
+showKm(truck.km);
