@@ -25,3 +25,7 @@ function showCharName(obj, key) {
 }
 const char = { name: 'John', age: 30, hasDriveLicense: true };
 console.log(showCharName(char, 'name'));
+//typeof Type operator
+const userName = 'John';
+const userName2 = 'Doe';
+console.log(userName2);
