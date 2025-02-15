@@ -66,3 +66,18 @@ class Person2 {
 const person2 = new Person2('John', 30);
 //console.log(person2.age);
 console.log(person2.showAge());
+
+//This
+class Person3 {
+    constructor(public name: string, private age: number) {
+        this.name = name;
+        this.age = age;
+    }
+
+    showAge(age:number) {
+        return this.age;
+    }
+}
+
+const person3 = new Person3('John', 30);
+console.log(person3.showAge(14));
