@@ -105,3 +105,25 @@ class Person4 {
 const person4 = new Person4('John', 30);
 person4.age = 14;
 console.log(person4.age);
+
+
+//Interface inheritance
+
+interface Animal2 {
+    name: string
+}
+
+interface Dog extends Animal2 {
+    bark(): void
+}
+
+class Dog2 implements Dog {
+    name!: string
+    bark() {
+        console.log('Au au');
+    }
+}
+
+const myDog = new Dog2();
+myDog.name = 'Dog';
+myDog.bark();

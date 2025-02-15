@@ -94,3 +94,11 @@ class Person4 {
 const person4 = new Person4('John', 30);
 person4.age = 14;
 console.log(person4.age);
+class Dog2 {
+    bark() {
+        console.log('Au au');
+    }
+}
+const myDog = new Dog2();
+myDog.name = 'Dog';
+myDog.bark();
