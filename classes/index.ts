@@ -162,3 +162,10 @@ class Derived2 extends Base2 {
 const derived2 = new Derived2();
 
 //derived2.someMethod();
+
+//Static members
+class StaticMembers {
+    static prop = "Teste static"
+}
+
+console.log(StaticMembers.prop);
