@@ -127,3 +127,20 @@ class Dog2 implements Dog {
 const myDog = new Dog2();
 myDog.name = 'Dog';
 myDog.bark();
+
+//Override de métodos
+
+class Base {
+    someMethod() {  
+        console.log('Base class method');
+    }
+}
+
+class Derived extends Base {
+    someMethod() {
+        console.log('Derived class method');
+    }
+}
+
+const derived = new Derived();
+derived.someMethod();
