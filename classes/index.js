@@ -57,4 +57,5 @@ class Person2 {
     }
 }
 const person2 = new Person2('John', 30);
+//console.log(person2.age);
 console.log(person2.showAge());

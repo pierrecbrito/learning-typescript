@@ -53,7 +53,7 @@ console.log(employee);
 
 //Methods
 class Person2 {
-    constructor(public name: string, public age: number) {
+    constructor(public name: string, private age: number) {
         this.name = name;
         this.age = age;
     }
@@ -64,4 +64,5 @@ class Person2 {
 }
 
 const person2 = new Person2('John', 30);
+//console.log(person2.age);
 console.log(person2.showAge());
