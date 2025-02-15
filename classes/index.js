@@ -87,8 +87,10 @@ class Person4 {
     set age(value) {
         if (value > 0) {
             this._age = value;
+            console.log('Idade alterada para: ' + value);
         }
     }
 }
 const person4 = new Person4('John', 30);
+person4.age = 14;
 console.log(person4.age);
