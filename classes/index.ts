@@ -208,3 +208,25 @@ const myClass = class<T> {
 
 const pessoa = new myClass("Jones")
 console.log(pessoa)
+
+//abstract class
+
+abstract class AbstractClass {
+    abstract showName(): void;
+}
+
+class AbstractExample extends AbstractClass {
+    name: string;
+
+    constructor(name:string) {
+        super();
+        this.name = name;
+    }
+
+    showName() {
+        console.log(name)
+    }
+}
+
+const example = new AbstractExample("Pierre")
+example.showName()

@@ -160,3 +160,17 @@ const myClass = class {
 };
 const pessoa = new myClass("Jones");
 console.log(pessoa);
+//abstract class
+class AbstractClass {
+}
+class AbstractExample extends AbstractClass {
+    constructor(name) {
+        super();
+        this.name = name;
+    }
+    showName() {
+        console.log(name);
+    }
+}
+const example = new AbstractExample("Pierre");
+example.showName();
