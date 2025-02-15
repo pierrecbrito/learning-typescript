@@ -174,3 +174,10 @@ class AbstractExample extends AbstractClass {
 }
 const example = new AbstractExample("Pierre");
 example.showName();
+//Class relations
+class People {
+}
+class Bird {
+}
+const birdPeople = new Bird(); //Only the attributes inside are validated
+console.log(birdPeople);

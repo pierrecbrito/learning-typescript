@@ -230,3 +230,16 @@ class AbstractExample extends AbstractClass {
 
 const example = new AbstractExample("Pierre")
 example.showName()
+
+
+//Class relations
+class People {
+    name!: string;
+}
+
+class Bird {
+    name!: string;
+}
+
+const birdPeople: People = new Bird();//Only the attributes inside are validated
+console.log(birdPeople)
