@@ -73,3 +73,22 @@ class Person3 {
 }
 const person3 = new Person3('John', 30);
 console.log(person3.showAge(14));
+//Getters and Setters
+class Person4 {
+    constructor(name, _age) {
+        this.name = name;
+        this._age = _age;
+        this.name = name;
+        this._age = _age;
+    }
+    get age() {
+        return this._age;
+    }
+    set age(value) {
+        if (value > 0) {
+            this._age = value;
+        }
+    }
+}
+const person4 = new Person4('John', 30);
+console.log(person4.age);
