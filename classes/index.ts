@@ -169,3 +169,17 @@ class StaticMembers {
 }
 
 console.log(StaticMembers.prop);
+
+//Generic Class
+class Item<T, U> {
+    first
+    second
+
+    constructor(first: T, second:U) {
+        this.first = first
+        this.second = second
+    }
+}
+
+const newItem = new Item("caixa", "surpresa")
+console.log(newItem)
