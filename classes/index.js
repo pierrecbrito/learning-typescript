@@ -115,3 +115,13 @@ class Derived extends Base {
 }
 const derived = new Derived();
 derived.someMethod();
+//Visibility Modifiers (public, protected, private)
+class Base2 {
+    someMethod() {
+        console.log('Base class method');
+    }
+}
+class Derived2 extends Base2 {
+}
+const derived2 = new Derived2();
+//derived2.someMethod();
