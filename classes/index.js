@@ -44,3 +44,17 @@ class Employee extends Person {
 }
 const employee = new Employee('John', 30, 2000);
 console.log(employee);
+//Methods
+class Person2 {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+        this.name = name;
+        this.age = age;
+    }
+    showAge() {
+        return this.age;
+    }
+}
+const person2 = new Person2('John', 30);
+console.log(person2.showAge());
