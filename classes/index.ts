@@ -183,3 +183,28 @@ class Item<T, U> {
 
 const newItem = new Item("caixa", "surpresa")
 console.log(newItem)
+
+//Parameter properties
+class ParameterProperties {
+    constructor(public name: string, private qty: number, private price: number) {
+        this.name = name;
+        this.qty = qty;
+        this.price = price;
+    }
+
+}
+
+const newShirt = new ParameterProperties("nike shirt", 1, 78.90)
+console.log(newShirt)
+
+//Class Expressions
+const myClass = class<T> {
+    name
+
+    constructor(name: T) {
+        this.name = name;
+    }
+}
+
+const pessoa = new myClass("Jones")
+console.log(pessoa)
