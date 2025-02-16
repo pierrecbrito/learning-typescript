@@ -42,3 +42,23 @@ var MultipleDecorators = /** @class */ (function () {
 }());
 var multiple = new MultipleDecorators();
 multiple.testing(); // Ending
+//class decorator
+function classDecorator() {
+    return function (target) {
+        console.log('classDecorator called');
+    };
+}
+var ClassDecorator2 = /** @class */ (function () {
+    function ClassDecorator2() {
+        console.log('ClassDecorator constructor');
+    }
+    ClassDecorator2.prototype.testing = function () {
+        console.log('Ending');
+    };
+    ClassDecorator2 = __decorate([
+        classDecorator()
+    ], ClassDecorator2);
+    return ClassDecorator2;
+}());
+var classDec = new ClassDecorator2();
+classDec.testing(); // Ending

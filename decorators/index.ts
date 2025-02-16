@@ -31,3 +31,26 @@ class MultipleDecorators {
 const multiple = new MultipleDecorators();
 multiple.testing(); // Ending
 
+//class decorator
+function classDecorator() {
+    return function(target: any) {
+        console.log('classDecorator called');
+    }
+}
+
+@classDecorator()
+class ClassDecorator2 {
+    
+    constructor() { 
+        console.log('ClassDecorator constructor');
+    }
+
+    testing() {
+        console.log('Ending');
+    }
+}
+
+const classDec = new ClassDecorator2();
+classDec.testing(); // Ending
+ 
+ 
