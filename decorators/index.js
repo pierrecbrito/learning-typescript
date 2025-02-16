@@ -62,3 +62,23 @@ var ClassDecorator2 = /** @class */ (function () {
 }());
 var classDec = new ClassDecorator2();
 classDec.testing(); // Ending
+//Method decorator
+function enumerable(value) {
+    return function (target, propertyKey, descriptor) {
+        descriptor.enumerable = value;
+    };
+}
+var Machine = /** @class */ (function () {
+    function Machine(name) {
+        this.name = name;
+    }
+    Machine.prototype.showName = function () {
+        return "The name is ".concat(this.name);
+    };
+    __decorate([
+        enumerable(false)
+    ], Machine.prototype, "showName", null);
+    return Machine;
+}());
+var trator = new Machine('Trator');
+console.log(trator); // The name is Trator

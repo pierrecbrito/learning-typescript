@@ -53,4 +53,27 @@ class ClassDecorator2 {
 const classDec = new ClassDecorator2();
 classDec.testing(); // Ending
  
+
+//Method decorator
+function enumerable(value: boolean) {
+    return function(target: any, propertyKey: string, descriptor: PropertyDescriptor) {
+        descriptor.enumerable = value;
+    };
+}
+
+class Machine {
+    name;
+
+    constructor(name: string) {
+        this.name = name;
+    }
+
+    @enumerable(false)
+    showName() {
+        return `The name is ${this.name}`;
+    }
+}
+
+const trator = new Machine('Trator');
+console.log(trator); // The name is Trator
  
