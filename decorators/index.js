@@ -82,3 +82,30 @@ var Machine = /** @class */ (function () {
 }());
 var trator = new Machine('Trator');
 console.log(trator); // The name is Trator
+//acessor decorator
+var Monster = /** @class */ (function () {
+    function Monster(age, name) {
+        this.age = age;
+        this.name = name;
+    }
+    Object.defineProperty(Monster.prototype, "showname", {
+        get: function () {
+            return this.name;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(Monster.prototype, "showage", {
+        get: function () {
+            return this.age;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    __decorate([
+        enumerable(true)
+    ], Monster.prototype, "showname", null);
+    return Monster;
+}());
+var charmander = new Monster(10, 'Charmander');
+console.log(charmander); // Charmander
