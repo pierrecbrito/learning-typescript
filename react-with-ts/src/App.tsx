@@ -4,12 +4,16 @@ function App() {
   //Variables
   const name: string = 'Pierre';
   const isWorking: boolean = true;
+  //functions
+  const userGreeting = (name: string): string => {
+    return `Hello ${name}`;
+  }
 
   return (
     <div className="App">
       <header className="App-header">
         <p>
-          {name}
+          {userGreeting(name)}
           {isWorking && <span> is working</span>}
         </p>
       </header>
