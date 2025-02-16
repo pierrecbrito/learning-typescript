@@ -23,3 +23,22 @@ var myClass = /** @class */ (function () {
 }());
 var myObj = new myClass();
 myObj.testing(); // testing
+function a() {
+    return function (target, propertyKey, descriptor) {
+        console.log('a called');
+    };
+}
+var MultipleDecorators = /** @class */ (function () {
+    function MultipleDecorators() {
+    }
+    MultipleDecorators.prototype.testing = function () {
+        console.log('Ending');
+    };
+    __decorate([
+        a(),
+        myDecorator()
+    ], MultipleDecorators.prototype, "testing", null);
+    return MultipleDecorators;
+}());
+var multiple = new MultipleDecorators();
+multiple.testing(); // Ending
