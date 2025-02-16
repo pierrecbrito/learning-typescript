@@ -14,6 +14,10 @@ function App() {
     return `Hello ${name}`;
   }
 
+  type TextOrNull = string | null;
+  const myText:TextOrNull = null;
+  const myText2:TextOrNull = 'Hello'; 
+
   return (
     <div className="App">
       <header className="App-header">
