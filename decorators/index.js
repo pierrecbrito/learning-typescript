@@ -10,37 +10,31 @@ function myDecorator() {
         console.log('myDecorator called on', target, propertyKey);
     };
 }
-var myClass = /** @class */ (function () {
-    function myClass() {
-    }
-    myClass.prototype.testing = function () {
+class myClass {
+    testing() {
         console.log('testing');
-    };
-    __decorate([
-        myDecorator()
-    ], myClass.prototype, "testing", null);
-    return myClass;
-}());
-var myObj = new myClass();
+    }
+}
+__decorate([
+    myDecorator()
+], myClass.prototype, "testing", null);
+const myObj = new myClass();
 myObj.testing(); // testing
 function a() {
     return function (target, propertyKey, descriptor) {
         console.log('a called');
     };
 }
-var MultipleDecorators = /** @class */ (function () {
-    function MultipleDecorators() {
-    }
-    MultipleDecorators.prototype.testing = function () {
+class MultipleDecorators {
+    testing() {
         console.log('Ending');
-    };
-    __decorate([
-        a(),
-        myDecorator()
-    ], MultipleDecorators.prototype, "testing", null);
-    return MultipleDecorators;
-}());
-var multiple = new MultipleDecorators();
+    }
+}
+__decorate([
+    a(),
+    myDecorator()
+], MultipleDecorators.prototype, "testing", null);
+const multiple = new MultipleDecorators();
 multiple.testing(); // Ending
 //class decorator
 function classDecorator() {
@@ -48,19 +42,18 @@ function classDecorator() {
         console.log('classDecorator called');
     };
 }
-var ClassDecorator2 = /** @class */ (function () {
-    function ClassDecorator2() {
+let ClassDecorator2 = class ClassDecorator2 {
+    constructor() {
         console.log('ClassDecorator constructor');
     }
-    ClassDecorator2.prototype.testing = function () {
+    testing() {
         console.log('Ending');
-    };
-    ClassDecorator2 = __decorate([
-        classDecorator()
-    ], ClassDecorator2);
-    return ClassDecorator2;
-}());
-var classDec = new ClassDecorator2();
+    }
+};
+ClassDecorator2 = __decorate([
+    classDecorator()
+], ClassDecorator2);
+const classDec = new ClassDecorator2();
 classDec.testing(); // Ending
 //Method decorator
 function enumerable(value) {
@@ -68,44 +61,60 @@ function enumerable(value) {
         descriptor.enumerable = value;
     };
 }
-var Machine = /** @class */ (function () {
-    function Machine(name) {
+class Machine {
+    constructor(name) {
         this.name = name;
     }
-    Machine.prototype.showName = function () {
-        return "The name is ".concat(this.name);
-    };
-    __decorate([
-        enumerable(false)
-    ], Machine.prototype, "showName", null);
-    return Machine;
-}());
-var trator = new Machine('Trator');
+    showName() {
+        return `The name is ${this.name}`;
+    }
+}
+__decorate([
+    enumerable(false)
+], Machine.prototype, "showName", null);
+const trator = new Machine('Trator');
 console.log(trator); // The name is Trator
 //acessor decorator
-var Monster = /** @class */ (function () {
-    function Monster(age, name) {
+class Monster {
+    constructor(age, name) {
         this.age = age;
         this.name = name;
     }
-    Object.defineProperty(Monster.prototype, "showname", {
-        get: function () {
-            return this.name;
-        },
-        enumerable: false,
-        configurable: true
-    });
-    Object.defineProperty(Monster.prototype, "showage", {
-        get: function () {
-            return this.age;
-        },
-        enumerable: false,
-        configurable: true
-    });
-    __decorate([
-        enumerable(true)
-    ], Monster.prototype, "showname", null);
-    return Monster;
-}());
-var charmander = new Monster(10, 'Charmander');
+    get showname() {
+        return this.name;
+    }
+    get showage() {
+        return this.age;
+    }
+}
+__decorate([
+    enumerable(true)
+], Monster.prototype, "showname", null);
+const charmander = new Monster(10, 'Charmander');
 console.log(charmander); // Charmander
+//Property decorator
+function formatNumber() {
+    return function (target, propertyKey) {
+        let value;
+        const getter = function () {
+            return value;
+        };
+        const setter = function (newVal) {
+            value = newVal.padStart(4, '0');
+        };
+        Object.defineProperty(target, propertyKey, {
+            get: getter,
+            set: setter
+        });
+    };
+}
+class ID {
+    constructor(id) {
+        this.id = id;
+    }
+}
+__decorate([
+    formatNumber()
+], ID.prototype, "id", void 0);
+const newItem = new ID("1");
+console.log(newItem.id); // 0001
