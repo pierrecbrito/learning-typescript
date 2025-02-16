@@ -2,6 +2,7 @@ import React from 'react';
 import FirstComponent from './components/FirstComponent';
 import SecondComponent from './components/SecondComponent';
 import Destructuring from './components/Destructuring';
+import State from './components/State';
 
 function App() {
   //Variables
@@ -22,6 +23,7 @@ function App() {
         <FirstComponent />
         <SecondComponent name={name} />
         <Destructuring title="Title" content="Content" commentQty={1} tags={['tag1', 'tag2']} />
+        <State />
       </header>
     </div>
   );
