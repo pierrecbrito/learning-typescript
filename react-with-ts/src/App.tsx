@@ -1,4 +1,5 @@
 import React from 'react';
+import FirstComponent from './components/FirstComponent';
 
 function App() {
   //Variables
@@ -16,6 +17,7 @@ function App() {
           {userGreeting(name)}
           {isWorking && <span> is working</span>}
         </p>
+        <FirstComponent />
       </header>
     </div>
   );

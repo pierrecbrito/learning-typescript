@@ -1,7 +1,5 @@
 import React from 'react'
 
-
-
 function FirstComponent() {
   return (
     <h1>FirstComponent</h1>
