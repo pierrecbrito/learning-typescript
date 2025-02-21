@@ -4,8 +4,8 @@ let numero: number
 numero = 10
 
 
-function greeting(argumento: string) {
-    console.log(`Olá, ${argumento}!`)
+function greeting(name: string) {
+    console.log(`hello, ${name}!`)
 }
 
 greeting(nome)

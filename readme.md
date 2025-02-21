@@ -1,16 +1,41 @@
-# Curso de TypeScript
+# TypeScript Course
 
-Este repositório contém o código desenvolvido durante o curso de TypeScript.
+This repository contains the code developed during the TypeScript course.
 
-## Estrutura do Projeto
+## Project Structure
 
-O projeto está organizado em duas pastas principais:
+The project is organized into two main folders:
 
--   `fundamentos`: Contém exemplos básicos de TypeScript, como declaração de variáveis, tipos de dados e manipulação de strings.
--   `introdução`: Contém exemplos introdutórios, incluindo a implementação de uma função de soma simples e exemplos de uso de classes.
+-   `fundamentos`: Contains basic TypeScript examples, such as variable declarations, data types, and string manipulation.
+-   `introdução`: Contains introductory examples, including the implementation of a simple sum function and examples of class usage.
 
 ### `fundamentos`
 
--   [index.html](fundamentos/index.html): Página HTML que carrega o script JavaScript compilado a partir do TypeScript.
--   [index.ts](fundamentos/index.ts): Código TypeScript com exemplos de números e strings.
--   [index.js](fundamentos/index.js): Versão JavaScript compilada do código TypeScript.
+-   [index.html](fundamentos/index.html): HTML page that loads the JavaScript script compiled from TypeScript.
+-   [index.ts](fundamentos/index.ts): TypeScript code with examples of numbers and strings.
+-   [index.js](fundamentos/index.js): JavaScript version compiled from the TypeScript code.
+
+### `introdução`
+
+-   [index.html](introdução/index.html): Basic HTML page.
+-   [index.ts](introdução/index.ts): Main TypeScript file for the introduction.
+-   [index.js](introdução/index.js): Compiled JavaScript file.
+-   [soma.ts](introdução/soma.ts): Simple function to add two numbers.
+-   [soma.js](introdução/soma.js): JavaScript version of the sum function.
+-   [usuario.ts](introdução/usuario.ts): (Non-existent file, possible future implementation of a user class)
+-   [usuario.js](introdução/usuario.js): (Non-existent file, possible future implementation of a user class)
+
+## How to Run
+
+1.  Make sure you have Node.js and npm installed.
+2.  Clone this repository.
+3.  Navigate to the project folder.
+4.  To run the examples, open the HTML files in your browser.
+
+## Notes
+
+-   The `.ts` files are the original TypeScript files.
+-   The `.js` files are generated from the `.ts` files after compilation.
+
+```bash
+tsc <filename.ts>
