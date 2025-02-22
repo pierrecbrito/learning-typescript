@@ -2,28 +2,36 @@
 
 This repository contains the code developed during the TypeScript course.
 
-## Project Structure
+## Topics Covered
 
-The project is organized into two main folders:
+### Basic Types
 
--   `fundamentos`: Contains basic TypeScript examples, such as variable declarations, data types, and string manipulation.
--   `introdução`: Contains introductory examples, including the implementation of a simple sum function and examples of class usage.
+- Number
+- String
+- Boolean
 
-### `fundamentos`
+### Type Inference and Annotation
 
--   [index.html](fundamentos/index.html): HTML page that loads the JavaScript script compiled from TypeScript.
--   [index.ts](fundamentos/index.ts): TypeScript code with examples of numbers and strings.
--   [index.js](fundamentos/index.js): JavaScript version compiled from the TypeScript code.
+- Type Annotation
+- Type Inference
+- Narrowing
 
-### `introdução`
+### Functions
 
--   [index.html](introdução/index.html): Basic HTML page.
--   [index.ts](introdução/index.ts): Main TypeScript file for the introduction.
--   [index.js](introdução/index.js): Compiled JavaScript file.
--   [soma.ts](introdução/soma.ts): Simple function to add two numbers.
--   [soma.js](introdução/soma.js): JavaScript version of the sum function.
--   [usuario.ts](introdução/usuario.ts): (Non-existent file, possible future implementation of a user class)
--   [usuario.js](introdução/usuario.js): (Non-existent file, possible future implementation of a user class)
+- Simple Functions
+
+### Classes
+
+- Basic Class Usage
+- Basic Interface Usage
+
+### Decoratos
+
+- Basic Decorators Usage
+
+### React
+
+- React with TS
 
 ## How to Run
 
